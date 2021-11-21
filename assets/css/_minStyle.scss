@@ -1,0 +1,100 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  background-color: rgba($dark_color, 1);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #333;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 20px;
+    border: 1px solid #333;
+  }
+}
+hr.separator {
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+}
+
+.section_space {
+  padding: 60px 0;
+}
+
+.tab_title {
+  text-align: center;
+  position: relative;
+  padding: 80px 0;
+  .title {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: rgba($dark_color2, 1);
+  }
+  .sub_title {
+    font-size: 56px;
+    font-weight: 900;
+    color: rgba($white_color, 1);
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+    span {
+      color: rgba($gold_color, 1);
+    }
+  }
+}
+
+.title_box {
+  .title {
+    font-weight: 600;
+    padding-bottom: 22px;
+    font-size: 26px;
+    color: rgba($white_color, 1);
+  }
+}
+
+@media (max-width: 425px) {
+  .tab_title {
+    .title {
+      font-size: 54px;
+    }
+    .sub_title {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .sochile_box {
+    font-size: 12px;
+  }
+}

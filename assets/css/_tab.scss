@@ -1,0 +1,25 @@
+.tab_min_box {
+  .tab_box {
+    position: relative;
+    display: none;
+    padding: 40px;
+    height: 100vh;
+    .login_layOut {
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgba($dark_color2, 1);
+      z-index: 9999;
+      transition: 0.4s all ease-in-out;
+      // display: none;
+      &.active{
+        height: 0;
+      }
+    }
+    &.active {
+      display: block;
+    }
+  }
+}
